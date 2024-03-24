@@ -25,6 +25,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -50,6 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 9.0.86.executor": "Run",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -181,6 +185,7 @@
       <workItem from="1711033735354" duration="762000" />
       <workItem from="1711210361532" duration="10000" />
       <workItem from="1711212761528" duration="2935000" />
+      <workItem from="1711258828147" duration="500000" />
     </task>
     <servers />
   </component>
