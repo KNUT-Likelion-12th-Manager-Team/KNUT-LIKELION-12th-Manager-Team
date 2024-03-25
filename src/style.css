@@ -1,0 +1,181 @@
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    height:100%;
+    margin:0;
+    border:0;
+    padding:0;
+    overflow: hidden;
+}
+
+
+header {
+    opacity: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 100;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+.nav_wrapper{
+    width: 50%;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: middle;
+
+    background-color: rgba(255, 51, 0, 0.526);
+    border-radius: 100px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,.1);
+}
+
+/****내비로고****/
+.nav_logo{
+    text-decoration: none;  
+}
+.nav_logo div{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    vertical-align: middle;
+}
+.nav_logo img {
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .09);
+    border-radius: 100%;
+    margin-right: 1rem;
+    padding: 5px;
+
+    /* 360도 회전시키는 애니메이션 */
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;  /* 회전 중심 */
+}
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+/******내비메뉴******/
+.nav_menu {
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+.nav_menu ul{
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+}
+.nav_menu li{
+    display: inline-block;
+    margin-left: 16px;
+    background-color: transparent;
+  }
+
+.nav_menu li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.nav_menu li a:hover{
+    color: white;
+}
+
+/********컨테이너**************/
+.container_wrapper {
+    position:relative;
+    top:0;
+    width:100%;height:100%;
+    transition: 0.5s;
+}
+
+.container {
+    width:100%;height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container:nth-child(1){background-color: rgb(245, 245, 245);}
+.container:nth-child(2){background-color: rgb(255, 231, 185);}
+.container:nth-child(3){background-color: rgb(223, 227, 255);}
+.container:nth-child(4){background-color: rgb(255, 207, 207);}
+
+
+.container p{
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+/*********** 타이틀 영상*****************/
+#title_video{
+
+    width: 50%; height: auto;
+    display: flex;
+
+}
+
+/*************** 로그인 ****************/
+.login_wrapper{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.login_wrapper > h2{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 24px;
+    color: #974747;
+    padding: 5px 10px;
+    border: #974747 solid;
+    border-width: 0 0 0 5px
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    background-color: rgb(245, 245, 245);
+    border-width: 0 0 1px;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+    color: #974747;
+    font-size: 16px;
+    margin-top: 20px;
+    border: solid #974747 2px;
+}
+
+#login-form > input[type="submit"]:hover{
+    color: white;
+    background-color: #974747;
+}
