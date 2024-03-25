@@ -13,7 +13,6 @@ body {
     overflow: hidden;
 }
 
-
 header {
     opacity: 100%;
     position: fixed;
@@ -119,7 +118,7 @@ header {
 .container:nth-child(3){background-color: rgb(223, 227, 255);}
 .container:nth-child(4){background-color: rgb(255, 207, 207);}
 
-
+/**************임시로 채워놓은 텍스트 스타일******************/
 .container p{
     position: relative;
     align-items: center;
@@ -127,7 +126,7 @@ header {
     vertical-align: middle;
 }
 
-/*********** 타이틀 영상*****************/
+/**************** 타이틀 영상*******************/
 #title_video{
 
     width: 50%; height: auto;
@@ -135,7 +134,7 @@ header {
 
 }
 
-/*************** 로그인 ****************/
+/****************** 로그인 ********************/
 .login_wrapper{
     vertical-align: middle;
     display: flex;
@@ -176,6 +175,42 @@ header {
 }
 
 #login-form > input[type="submit"]:hover{
+    color: white;
+    background-color: #974747;
+}
+
+/****************** 로그아웃 ********************/
+.logout_wrapper{
+    display: flex;
+    vertical-align: middle;
+    display: inline;
+    align-items:center;
+}
+
+.logout_wrapper > h2{
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 24px;
+    color: #974747;
+    padding: 5px 10px;
+    border: #974747 solid;
+    border-width: 0 0 0 5px
+}
+
+#logout {
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-width: 0 0 1px;
+    color: #974747;
+    font-size: 16px;
+    margin-top: 20px;
+    border: solid #974747 2px;
+}
+
+#logout:hover {
     color: white;
     background-color: #974747;
 }

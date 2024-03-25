@@ -46,14 +46,20 @@
             <video id="title_video" autoplay loop muted>
                 <source src="./assets/title_ani.webm" type="video/webm">
             </video>
+            
             <div class="login_wrapper">
                 <h2>LOGIN</h2>
-                <form method="post" action="서버의url" id="login-form">
+                <form method="post" action="index.html" id="login-form">
                     <input type="text" name="userName" placeholder="id">
                     <input type="password" name="userPassword" placeholder="Password">
-                    <input type="submit" value="Login">
+                    <input id="login" type="submit" value="Login" onclick="Login()">
                 </form>
             </div>
+            <div class="logout_wrapper" id="logout_id">
+                <h2>WELCOME! NAME!</h2>
+                <button id="logout" onclick="Logout()">Logout</button>
+            </div>
+
         </div>
         <div id="info" class="container">
             <p>한국교통대 멋쟁이사자처럼 12기 및 활동 소개 페이지</p>
