@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+:root {
+  --primary-color: #83adc6; /* 주요 색상: 분홍색 */
+  --text-color: #1d1d1d; /* 텍스트 색상: 어두운 회색 */
+  --bg-color:  #B3D2E5; /* 배경 색상: 연한 보라색 */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* 폰트 설정 */
+}
+body {
+  background-color: #fff; /* 배경 색상: 흰색 */
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: var(--bg-color); /* 배경 색상 */
+}
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc; /* 하단 테두리: 회색 */
+}
+.calendar .header .month {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-color); /* 텍스트 색상 */
+}
+.calendar .header .btns {
+  display: flex;
+  gap: 10px;
+}
+.calendar .header .btns .btn {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff; /* 아이콘 색상 */
+  background-color: var(--primary-color); /* 배경 색상 */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.calendar .header .btns .btn:hover {
+  background-color: #c8eaff; /* 호버 시 배경 색상 변경: 분홍색 */
+  transform: scale(1.05); /* 호버 시 아이콘 확대 */
+}
+.weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.days .day {
+  width: calc(100% / 7 - 10px);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color); /* 텍스트 색상 */
+  background-color: #fff; /* 배경 색상: 흰색 */
+  transition: all 0.3s;
+}
+.days .day:not(.next):not(.prev):hover {
+  color: #fff; /* 호버 시 텍스트 색상: 흰색 */
+  background-color: var(--primary-color); /* 호버 시 배경 색상 변경: 분홍색 */
+  transform: scale(1.05); /* 호버 시 일정 크기로 확대 */
+}
+.days .day.today {
+  color: #fff; /* 오늘 날짜 텍스트 색상: 흰색 */
+  background-color: var(--primary-color); /* 오늘 날짜 배경 색상: 분홍색 */
+}
+.days .day.next,
+.days .day.prev {
+  color: #ccc; /* 이전 및 다음 달 날짜 텍스트 색상: 연한 회색 */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 적절한 여백 설정 */
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #1d1d1d; /* 텍스트 색상 설정 */
+  margin-top: 5px; /* 제목의 상단 여백 조정 */
+}
+
