@@ -26,7 +26,7 @@
 <body>
     <header>
         <div class="nav_wrapper">
-            <a class="nav_logo" href="#home">
+            <a class="nav_logo" href="#home" onclick="navScroll('home')">
                 <img src="../assets/logo.png" />
                 <div>KNUT LIKELION</div>
             </a>
@@ -49,10 +49,10 @@
 
             <div class="login_wrapper">
                 <h2>LOGIN</h2>
-                <form method="post" action="../html/index.html" id="login-form">
-                    <input type="text" name="userName" placeholder="id">
-                    <input type="password" name="userPassword" placeholder="Password">
-                    <input id="login" type="submit" value="Login" onclick="Login()">
+                <form id="login_form" method="post" action="../html/index.html">
+                    <input id="userId" type="text" name="userId" placeholder="id">
+                    <input id="userPw" type="password" name="userPassword" placeholder="Password">
+                    <input id="login_btn" type="submit" value="Login">
                 </form>
             </div>
             <div class="logout_wrapper" id="logout_id">
@@ -105,6 +105,7 @@
             <!--출석체크 종료-->
         </div>
     </div>
+    <script type="text/javascript" src="../js/login.js"></script>
     <script type="text/javascript" src="../js/ui.js"></script>
 </body>
 
