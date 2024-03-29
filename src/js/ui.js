@@ -17,73 +17,26 @@ window.addEventListener('wheel',(e)=>{
         page = lastPage;
     }
     wrap.style.top = page * - 100 + 'vh';
-},{passive:false}); // 디폴트 기능 제거 - 스크롤
+},{passive:false}); // 디폴트 스크롤 기능 제거
 
 
 // nav 메뉴 클릭시 스크롤 페이지 이동
+// page 변수만 바꿔주면 window이벤트리스너 함수를 통해 이동
 function navScroll(name) {
     switch(name){
         case "home":
             page = 0;
-            wrap.style.top = page * - 100 + 'vh';
             break;
         case "info":
             page = 1;
-            wrap.style.top = page + 'vh';
             break;
         case "members":
             page = 2;
-            wrap.style.top = page + 'vh';
             break;
         case "daily_check":
             page = 3;
-            wrap.style.top = page * - 100 + 'vh';
             break;
         default:
             break;
     }
 }
-
-// 로그인 & 로그아웃
-
-//임시 아이디 비번
-let id = "name";
-let pw = "1234";
-//로그인 여부 (로그인 토큰 유효시간 동안 true)
-let isActiveLogin = false;
-
-const login_wrapper = document.querySelector('.login_wrapper');
-const logout_wrapper = document.querySelector('.logout_wrapper');
-const logout_id = document.querySelector('#logout_id');
-
-function Login() {
-    if(id=="name" && pw=="1234"){
-        logout_id.style.display = 'flex';
-        login_wrapper.style.display = 'none';
-        isActiveLogin = true;
-    }
-    else{
-        alert("로그인 실패!")
-    }
-}
-
-function Logout() {
-    logout_id.style.display = 'none';
-    login_wrapper.style.display = 'flex';
-    isActiveLogin = false;
-}
-
-
-// login시 페이지 로딩이 다시되기 때문에 페이지 노출 즉시, 로그인 여부를 검사하고 로그인/로그아웃 ui를 나타내거나 숨기는 코드를 init() 함수에 추가함
-const init = () => {
-    if (isActiveLogin){
-        logout_id.style.display = 'flex';
-        login_wrapper.style.display = 'none';
-    }
-    else{
-        logout_id.style.display = 'none';
-        login_wrapper.style.display = 'flex';
-    }
-}
- 
-init();

@@ -25,7 +25,6 @@ header {
 
 .nav_wrapper{
     width: 50%;
-
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -33,13 +32,12 @@ header {
     align-items: center;
     margin: 0 auto;
     vertical-align: middle;
-
     background-color: rgba(255, 51, 0, 0.526);
     border-radius: 100px;
     box-shadow: 4px 4px 5px rgba(0,0,0,.1);
 }
 
-/****내비로고****/
+/****내비멋사로고****/
 .nav_logo{
     text-decoration: none;  
 }
@@ -97,7 +95,7 @@ header {
     color: white;
 }
 
-/********컨테이너**************/
+/************컨테이너**************/
 .container_wrapper {
     position:relative;
     top:0;
@@ -139,13 +137,12 @@ header {
     vertical-align: middle;
     display: flex;
     flex-direction: column;
-
     width: 400px;
     height: 350px;
     padding: 40px;
     box-sizing: border-box;
 }
-
+/***로그인 텍스트***/
 .login_wrapper > h2{
     margin-bottom: 10px;
     display: block;
@@ -155,7 +152,7 @@ header {
     border: #974747 solid;
     border-width: 0 0 0 5px
 }
-#login-form > input{
+#login_form > input{
     width: 100%;
     height: 48px;
     padding: 0 10px;
@@ -164,24 +161,24 @@ header {
     background-color: rgb(245, 245, 245);
     border-width: 0 0 1px;
 }
-#login-form > input::placeholder{
+#login_form > input::placeholder{
     color: #D2D2D2;
 }
-#login-form > input[type="submit"]{
+#login_form > input[type="submit"]{
     color: #974747;
     font-size: 16px;
     margin-top: 20px;
     border: solid #974747 2px;
 }
 
-#login-form > input[type="submit"]:hover{
+#login_form > input[type="submit"]:hover{
     color: white;
     background-color: #974747;
 }
 
 /****************** 로그아웃 ********************/
 .logout_wrapper{
-    display: flex;
+    display: none;
     vertical-align: middle;
     display: inline;
     align-items:center;
@@ -194,7 +191,7 @@ header {
     color: #974747;
     padding: 5px 10px;
     border: #974747 solid;
-    border-width: 0 0 0 5px
+    border-width: 0 0 0 5px;
 }
 
 #logout {
