@@ -4,6 +4,7 @@ const container = document.getElementsByClassName('container');
 let page = 0; // 영역 포지션 초기값
 const lastPage = container.length - 1; // 마지막 페이지
 
+// 휠 이동
 window.addEventListener('wheel',(e)=>{
     e.preventDefault();
     if(e.deltaY > 0){
@@ -21,22 +22,23 @@ window.addEventListener('wheel',(e)=>{
 
 
 // nav 메뉴 클릭시 스크롤 페이지 이동
-// page 변수만 바꿔주면 window이벤트리스너 함수를 통해 이동
 function navScroll(name) {
     switch(name){
         case "home":
             page = 0;
+            wrap.style.top = page * - 100 + 'vh';
             break;
         case "info":
             page = 1;
+            wrap.style.top = page * - 100 + 'vh';
             break;
         case "members":
             page = 2;
+            wrap.style.top = page * - 100 + 'vh';
             break;
         case "daily_check":
             page = 3;
-            break;
-        default:
+            wrap.style.top = page * - 100 + 'vh';
             break;
     }
 }
