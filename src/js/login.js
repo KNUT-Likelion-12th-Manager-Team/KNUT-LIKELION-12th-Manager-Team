@@ -14,7 +14,7 @@ let pw = "";
 
 // login시 페이지 로딩이 다시되기 때문에 페이지 노출 즉시, 로그인 여부를 검사하고 로그인/로그아웃 ui를 나타내거나 숨기는 코드를 init() 함수에 추가함
 const init = () => {
-    if (isLoginActive == true){
+    if (isLoginActive=="true"){
         logout_wrapper.style.display = 'flex';
         login_wrapper.style.display = 'none';
         console.log("페이지 초기화 - 로그인상태");
@@ -92,18 +92,3 @@ function Logout() {
     login_wrapper.style.display = 'flex';
     localStorage.setItem('isLoginActive', false);
 }
-
-/* 개발 초기 테스트용 로그인 함수1
-const id = "name";
-const pw = "1234";
-function Login() {
-    if(id=="name" && pw=="1234"){
-        logout_id.style.display = 'flex';
-        login_wrapper.style.display = 'none';
-        isActiveLogin = true;
-    }
-    else{
-        alert("로그인 실패!")
-    }
-}
-*/
