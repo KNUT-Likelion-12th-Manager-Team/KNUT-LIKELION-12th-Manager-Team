@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.info-title{
+    top: 60px;
+    position: absolute;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+#info-img{
+    position: absolute;
+    width: 60%;
+}
+
+
+.hero-glass-flow {
+    top: 150px;
+    width: 100%;
+    max-width: 60rem;
+    min-height: 3.6rem;
+    position: absolute;
+    display: block;
+}
+
+.glass-container {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 1rem;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.hero-animation-mask {
+    width: 440px;
+    height: 250px;
+    margin-left: -238px;
+    position: absolute;
+    bottom: -185px;
+    left: 50%;
+    overflow: hidden
+}
+
+.glass-flow {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    display: flex
+}
+
+.glass-flow.is-animated {
+    width: 100%;
+    position: absolute;
+    top: 0
+}
+
+.gflow-label {
+    box-shadow: none;
+    color: rgba(255,255,255,.25);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.15);
+    border-radius: 100px;
+    flex: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: .65rem;
+    font-weight: 700
+}
+
+.gflow-label.is-active {
+    z-index: 5;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    background-color: #483a5a;
+    position: relative
+}
+
+.gflow-label.is-active.a {
+    background-color: #2a2135
+}
+
+.gflow-label.is-active.b {
+    outline-offset: 0px;
+    color: #5517a5;
+    background-color: #fdeb98;
+    outline: 2px #483a5a;
+    box-shadow: 0 0 0 2px #2a2135
+}
+
+.gflow-label.is-active.c {
+    outline-offset: 0px;
+    background-color: #f13ca9;
+    outline: 2px #483a5a;
+    box-shadow: 0 0 0 2px #2a2135
+}
+
+.gflow-label.is-active.d {
+    outline-offset: 0px;
+    color: #fff;
+    background-color: #4353ff;
+    outline: 2px #483a5a;
+    box-shadow: 0 0 0 2px #2a2135
+}
+
+.gflow-label.is-active.tag {
+    background-color: rgba(34,27,44,.88);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .6rem;
+    font-weight: 400;
+    display: inline-block
+}
+
+.gflow-label.is-level {  
+    box-shadow: none;
+    color: #fff;
+    background-color: rgba(0,0,0,.27);
+    background-image: none;
+    background-repeat: repeat;
+    background-size: auto;
+    border-radius: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 400;
+    display: inline-block
+}
+
+.gflow-label.is-level.level-1 {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.23)
+}
+
+.gflow-line {
+    width: auto;
+    height: 3px;
+    background-color: rgba(0,0,0,.15);
+    flex: 1
+}
+
+.gflow-line.is-animated {
+    z-index: 1;
+    width: 87%;
+    background-color: #2a2135;
+    flex: 0 auto;
+    position: absolute
+}

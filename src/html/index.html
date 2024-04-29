@@ -21,6 +21,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <title>KNUT 멋쟁이사자처럼 12기</title>
     <link rel="stylesheet" href="../css/main_style.css">
+    <link rel="stylesheet" href="../css/glass-flow.css">
 </head>
 
 <body>
@@ -62,7 +63,63 @@
 
         </div>
         <div id="info" class="container">
-            <p>한국교통대 멋쟁이사자처럼 12기 및 활동 소개 페이지</p>
+            <div class="info-title">
+                <img id="info-img" src="../assets/test_info_title.png">
+                <h1>한국교통대학교 멋쟁이사자처럼 12기 활동 내용(1학기)</h1>
+            </div>
+            <div class="hero-glass-flow">
+                <div class="glass-container">
+                    <div class="glass-flow">
+                        <div class="gflow-label">ot</div>
+                        <div class="gflow-line"></div>
+                        <div class="gflow-label">study</div>
+                        <div class="gflow-line c"></div>
+                        <div class="gflow-label c">ideaton</div>
+                        <div class="gflow-line"></div>
+                        <div class="gflow-label">hackerton</div>
+                    </div>
+                    <div class="glass-flow is-animated">
+                        <div class="gflow-label is-active a">ot</div>
+                        <div class="gflow-label is-active b">study</div>
+                        <div class="gflow-label is-active c">ideathon</div>
+                        <div class="gflow-label is-active d">hackerthon</div>
+                        <div class="gflow-line is-animated"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slider-wrap">
+                <div class="main-slide">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="../assets/slide/ot1.jpg">
+                            <p>OT : 한국교통대 멋쟁이사자처럼의 첫 만남!</p>
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/slide/단체사진(상호).jpg">
+                            <p>OT : 한국교통대 멋쟁이사자처럼의 첫 만남!</p>
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/slide/git_study.jpg">
+                            <p>2주차 세션 : git에 대해 배워보자!</p>
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/slide/html_study.jpg">
+                            <p>3주차 세션 : 다같이 html 실습해볼까요?</p>
+                        </div>
+                    </div><!-- // .slider -->                   
+                </div><!--main-slide-->
+
+                <div class="slider-btn-box">
+                  <button type="button" class="prev">Prev</button>
+                  <button type="button" class="next">Next</button>
+                </div>
+                <!--// .slide_btn_box -->
+              <!-- // .slide_wrap -->
+            </div>
+
+
         </div>
         <div id="members" class="container">
             <p>구성원들</p>
@@ -107,6 +164,7 @@
     </div>
     <script type="text/javascript" src="../js/login.js"></script>
     <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
 </body>
 
 </html>
