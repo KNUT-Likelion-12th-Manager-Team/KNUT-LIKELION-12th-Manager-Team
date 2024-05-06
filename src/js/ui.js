@@ -42,3 +42,13 @@ function navScroll(name) {
             break;
     }
 }
+
+// 마우스에 따라 움직이는 타이틀
+document.addEventListener('mousemove', (e) => {
+    let mouseX = e.pageX + 10; // document의 x좌표값
+    let mouseY = e.pageY + 10; // document의 y좌표값
+
+    let title = document.querySelector('#info-img');
+    title.style.left = mouseX * 50 * 0.003 + 50 + 'px';
+    title.style.top = mouseY * 10 * 0.003 - 30 + 'px';
+})

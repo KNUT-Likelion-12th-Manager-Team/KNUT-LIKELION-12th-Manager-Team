@@ -3,6 +3,7 @@ html{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -92,6 +93,7 @@ header {
 }
 
 .nav_menu li a:hover{
+    cursor:pointer;
     color: white;
 }
 
@@ -104,6 +106,7 @@ header {
 }
 
 .container {
+    position: relative;
     width:100%;height:100%;
     display: flex;
     align-items: center;
@@ -112,7 +115,7 @@ header {
 }
 
 .container:nth-child(1){background-color: rgb(245, 245, 245);}
-.container:nth-child(2){background-color: rgb(255, 231, 185);}
+.container:nth-child(2){background-color: rgb(214, 209, 201);}
 .container:nth-child(3){background-color: rgb(223, 227, 255);}
 .container:nth-child(4){background-color: rgb(255, 207, 207);}
 
@@ -126,10 +129,8 @@ header {
 
 /**************** 타이틀 영상*******************/
 #title_video{
-
     width: 50%; height: auto;
     display: flex;
-
 }
 
 /****************** 로그인 ********************/
@@ -210,4 +211,102 @@ header {
 #logout:hover {
     color: white;
     background-color: #974747;
+}
+
+
+/************info 슬라이더***********/
+
+.slider-wrap { 
+    position: absolute; 
+    top: 30%; 
+    width: 65%;
+    height: 60%;
+    margin: 0 0 auto; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,.15);;
+}
+
+.main-slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 3%;
+}
+
+.slider-btn-box > button { 
+    position: absolute; 
+    top: 55%; 
+    margin-top: -45px; 
+    width: 60px; height: 60px; 
+    font-size: 16px; 
+    color: rgb(255, 118, 72); 
+    background: none; 
+    border: 1px solid #ffffff; 
+    cursor: pointer; }
+.slider-btn-box > button:hover{color: rgb(240, 152, 152);}
+.slider-btn-box > .prev { left: -80px; }
+.slider-btn-box > .next { right: -80px; }
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* 총 이미지 4개 */
+    width: 400%;
+    height: 100%;
+}
+
+.slide{
+    padding: 5px 5px;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide img{
+    width: 50%;
+}
+.slide p{
+    color: black;
+}
+.slide::before {
+    position: absolute;
+    left: 5px;
+    top: 8%;
+    background: rgba(64, 92, 127, 0.566);
+    border-left: white solid 3px;
+    color: #fff;
+    padding: 5px 10px;
+    transform: rotate(-30deg);
+}
+.slide:nth-child(1)::before {content: 'OT';}
+.slide:nth-child(2)::before {content: 'OT';}
+.slide:nth-child(3)::before {content: '2주차세션';}
+.slide:nth-child(4)::before {content: '3주차세션';}
+
+/*********************/
+.info-title h1{
+    color: rgba(0, 0, 0, 0);
+}
+/****info 영상배경******/
+.bg-video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
