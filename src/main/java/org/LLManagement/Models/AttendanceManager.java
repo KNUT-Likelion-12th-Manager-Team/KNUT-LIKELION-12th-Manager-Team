@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+
+//수정필요
 public class AttendanceManager extends DatabaseSetting {
     public void AttendanceChecking(int user_id) {
         Connection con = null;
